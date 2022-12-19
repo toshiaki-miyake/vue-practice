@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+html {
+	font-size: 62.5%;
+	@include media(spIp5) {
+	  font-size: (62.5% * 0.8);
+	}
+}
+body {
+	font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	overflow-x: hidden;
+	font-size: 1.8em;
+	line-height: 1.5;
+	word-wrap: break-word;
+}
+a {
+	text-decoration:none;
+	transition: .4s;
+	&:hover {
+		@include media(pc) {
+			opacity: 0.8;
+		}
+	}
+}
+img {
+	max-width:100%;
+	height:auto;
+	vertical-align: bottom;
+}
+main {
+	display: block;
+}
+header {
+	padding: 20px;
+	border-bottom: 1px solid #000;
+	.inner {
+		height: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	h1 {
+		font-weight: bold;
+		font-size: 3rem;
+	}
+	nav {
+		ul {
+			display: flex;
+			justify-content: center;
+			li {
+				margin: 0 20px;
+				text-decoration: underline;
+				color: #000;
+				cursor: pointer;
+				&:hover {
+					text-decoration: none;
+				}
+				> ul {
+					li {
+						display: none;
+					}
+				}
+				a {
+					text-decoration: underline;
+					color: #000;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+main {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.sidebar {
+	width: 200px;
+
+	div.wrap {
+		&:nth-of-type(1) {
+			
+		}
+		&:nth-of-type(2) {
+			margin-top: 30px;
+		}
+		h3 {
+			text-align: center;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #000;
+			+nav {
+				margin-top: 16px;
+				li {
+					text-align: center;
+					&:not(:nth-of-type(1)) {
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+footer {
+	.copyright {
+		text-align: center;
+		padding: 10px 0;
+		background-color: #78CDD1;
+	}
+}
+
+.contain {
+  width: calc(100% - 250px);
+}
+.carousel {
+  height: 200px;
+}
+.carousel__pagination {
+  margin-top: 20px;
+}
+.carousel img {
+  width: 100%;
+}
+.carousel__slide {
+  width: 200px;
+  height: 200px;
+}
+.articles {
+  margin-top: 100px;
+}
+.articles {
+	ul {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 20px 10px;
+	}
+	li {
+		width: calc(100% / 3 - 10px);
+		a {
+			color: #333;
+			h3 {
+				margin-top: 10px;
+				font-size: 1.6rem;
+			}
+			p {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
+

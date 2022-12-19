@@ -1,0 +1,292 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .tab {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tab {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  font-size: 1.8em;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+@media screen and (min-width: 768px) {
+  a:hover {
+    opacity: 0.8;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+main {
+  display: block;
+}
+
+header {
+  padding: 20px;
+  border-bottom: 1px solid #000;
+}
+header .inner {
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header nav ul li {
+  margin: 0 20px;
+  text-decoration: underline;
+  color: #000;
+  cursor: pointer;
+}
+header nav ul li:hover {
+  text-decoration: none;
+}
+header nav ul li > ul li {
+  display: none;
+}
+header nav ul li a {
+  text-decoration: underline;
+  color: #000;
+}
+header nav ul li a:hover {
+  text-decoration: none;
+}
+
+main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.sidebar {
+  width: 200px;
+}
+.sidebar div.wrap:nth-of-type(2) {
+  margin-top: 30px;
+}
+.sidebar div.wrap h3 {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+.sidebar div.wrap h3 + nav {
+  margin-top: 16px;
+}
+.sidebar div.wrap h3 + nav li {
+  text-align: center;
+}
+.sidebar div.wrap h3 + nav li:not(:nth-of-type(1)) {
+  margin-top: 20px;
+}
+
+footer .copyright {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #78CDD1;
+}
+
+.contain {
+  width: calc(100% - 250px);
+}
+
+.carousel {
+  height: 200px;
+}
+
+.carousel__pagination {
+  margin-top: 20px;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.carousel__slide {
+  width: 200px;
+  height: 200px;
+}
+
+.articles {
+  margin-top: 100px;
+}
+
+.articles ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 20px 10px;
+}
+.articles li {
+  width: calc(33.3333333333% - 10px);
+}
+.articles li a {
+  color: #333;
+}
+.articles li a h3 {
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+.articles li a p {
+  font-size: 1.6rem;
+}
